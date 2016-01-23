@@ -1,0 +1,82 @@
+[
+  {
+    "icon": "&#xE262;",
+    "option": "title",
+    "desc": "Achievement title",
+    "default": "undefined",
+    "type": "String",
+    "mandatory": "Yes"
+  },
+  {
+    "icon": "&#xE416;",
+    "option": "icon",
+    "desc": "Achievement icon URL, usually taken from WoW databes like <a href=\"http://www.wowhead.com/achievement=4496/its-over-nine-thousand#icon:ability_warrior_innerrage\" target=\"_blank\">wowhead</a> (recomended) using the format <code>//wow.zamimg.com/images/wow/icons/large/ability_warrior_innerrage.jpg</code> <br> You can always set custom icons, but remember, for better perfomance use 56x56 images sizes, and serve them locally. <br> A better practice would be to place your icons on <code>/wa-media/</code> folder and simply call it just like <code>{\"icon\": \"your_icon.jpg\"}</code>",
+    "default": "\"default_icon.jpg\"",
+    "type": "String/URL",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE913;",
+    "option": "url",
+    "desc": "If you specify an URL, then the achievement will become clickable.",
+    "default": "undefined",
+    "type": "String/URL",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE40A;",
+    "option": "type",
+    "desc": "There are two kind of achievements: <code>character</code> and <code>guild</code> based. Maybe in the future you can add your own achievement template.",
+    "default": "\"character\"",
+    "type": "String",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE8A7;",
+    "option": "MediaSourcePath",
+    "desc": "<strong class=\"animated pulse infinite text-danger\">IMPORTANT!</strong> This plugin uses its own media files (image and audio), said files are placed in the <code>/wa-media/</code> folder, which have to be placed relatively to your <code>index.html</code> file. If that's the case, then you don't need to change this option. But if you need to use a custom path, or you have problems setting up this plugin (like images don't showing up) then you may specify <code>/wa-media/</code> folder path here.",
+    "default": "\"../wa-media/\"",
+    "type": "String/Path",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE050;",
+    "option": "EnableAudio",
+    "desc": "Set to true if you want to play a sound at the same time the achievement appears. Won't work on Internet Explorer 6 and other browsers who don't support HTML5 <code>&lt;audio&gt;</code> elements.",
+    "default": "false",
+    "type": "Boolean",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE894;",
+    "option": "AchievementEarned",
+    "desc": "Language string, useful for translating this text (be careful with the length).",
+    "default": "\"Achievement Earned\"",
+    "type": "String",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE153;",
+    "option": "GuildName",
+    "desc": "Shows the guild name on the achievement display. Becomes mandatory if you are displaying guild achievements (see type option).",
+    "default": "\"WoW Achievements\"",
+    "type": "String",
+    "mandatory": "Depends"
+  },
+  {
+    "icon": "&#xE894;",
+    "option": "GuildAchievementEarned",
+    "desc": "Language string, useful for translating this text (be careful with the length).",
+    "default": "\"Guild Achievement Earned\"",
+    "type": "String",
+    "mandatory": "No"
+  },
+  {
+    "icon": "&#xE01B;",
+    "option": "Duration",
+    "desc": "Set for how long you want the achievement to be displayed until it starts to fade out (and eventually disappear).",
+    "default": "3000",
+    "type": "Number",
+    "mandatory": "No"
+  }
+]

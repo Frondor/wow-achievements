@@ -1,7 +1,7 @@
 [
   {
     "icon": "&#xE262;",
-    "option": "titlae",
+    "option": "title",
     "desc": "Achievement title",
     "default": "undefined",
     "type": "String",
